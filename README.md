@@ -1,143 +1,112 @@
-# [Project Title]
+# Project Checklist
 
-## 1. Introduction
+This checklist is to ensure all aspects of the project are well-documented and completed.
 
-Provide a concise overview of the project, including its purpose, objectives, and the problem it addresses. Explain the context and motivation behind your work.
+## I. Project Planning & Setup
 
-## 2. Dataset
+*   [ ] **Project Goal:**
+    *   [ ] Clearly define the problem you are trying to solve.
+    *   [ ] Identify the key questions you are trying to answer with the project.
+    *   [ ] State the project's intended outcome (e.g., predictive model, data analysis, etc.).
+*   [ ] **Data Acquisition:**
+    *   [ ] Determine the data sources needed (e.g., Kaggle, APIs, custom datasets).
+    *   [ ] Obtain the data and store it in a well-organized manner.
+    *   [ ] Document the origin and format of the data.
+*   [ ] **Project Setup:**
+    *   [ ] Create a new project repository on GitHub (or your chosen platform).
+    *   [ ] Initialize the project using the Cookiecutter Data Science template (or a similar structure).
+    *   [ ] Set up a virtual environment (if necessary) and install required libraries.
+*   [ ] **Initial Planning Notes:**
+    *   [ ] Make notes on your initial approach/methodology.
+    *   [ ] Identify any potential challenges or limitations you might encounter.
 
-*   **Source:**  Describe where the dataset was obtained (e.g., Kaggle, UCI, APIs). Include a link if available.
-*   **Description:** Provide a high-level summary of what data the dataset contains and the features it includes. Explain any relevant characteristics of the dataset, such as its size and scope.
+## II. Data Exploration & Preparation
 
-## 3. Project Goals
+*   [ ] **Data Understanding:**
+    *   [ ] Load the data into a suitable format (e.g., pandas DataFrame).
+    *   [ ] Explore the data with summary statistics and descriptive analysis.
+    *   [ ] Identify the features and target variables in your data.
+    *   [ ] Check for missing values, outliers, and data quality issues.
+*   [ ] **Data Cleaning & Preprocessing:**
+    *   [ ] Handle missing values (imputation, removal, etc.).
+    *   [ ] Handle outliers (removal, transformation, etc.).
+    *   [ ] Convert data types to be suitable for analysis and modeling.
+    *   [ ] Encode categorical variables (one-hot encoding, label encoding, etc.).
+    *   [ ] Scale and/or normalize numerical features if needed (standard scaling, min-max scaling).
+    *   [ ] Split the data into training, validation, and test sets (when needed for modeling).
+*   [ ] **Exploratory Data Analysis (EDA):**
+    *   [ ] Perform visualization to understand feature distributions and relationships.
+    *   [ ] Identify any significant patterns or correlations.
+    *   [ ] Summarize your key findings and data insights with documentation or code comments.
 
-*   **Primary Objective:** State the main goal that your project is trying to achieve.
-*   **Specific Objectives:** Describe the detailed goals you want to complete for this project, including what you want to accomplish with the data and the model.
-*   **Novelty:** Explain how this project goes beyond other projects, in terms of data preprocessing techniques, feature engineering, models or analysis approaches.
+## III. Model Building (If applicable)
 
-## 4. Methodology
+*   [ ] **Feature Engineering:**
+    *   [ ] Create new features that could improve model performance.
+    *   [ ] Validate the usefulness of new features.
+*   [ ] **Model Selection:**
+    *   [ ] Identify suitable machine learning or statistical models for the task.
+    *   [ ] Justify your choice of model(s).
+*   [ ] **Model Training:**
+    *   [ ] Train the selected model(s) using training data.
+    *   [ ] Track and document the training process.
+    *   [ ] Implement cross-validation to ensure robust model generalization.
+*   [ ] **Model Tuning:**
+    *   [ ] Tune model hyperparameters using techniques like grid search or random search.
+    *   [ ] Document changes to model performance during the tuning process.
+*   [ ] **Model Evaluation:**
+    *   [ ] Choose appropriate evaluation metrics for the task (e.g., accuracy, precision, recall, F1-score, AUC, RMSE, etc.).
+    *   [ ] Evaluate model performance on validation and/or test sets.
+    *   [ ] Compare performance of different models and justify your choice.
+*   [ ] **Model Serialization:**
+    *   [ ] Save your trained model for later use.
 
-*   **Workflow Overview:**
-    *   Briefly describe the key stages of your project (e.g., Data Loading, Data Cleaning, Feature Engineering, Modeling, Evaluation, and Analysis).
-    *   Use diagrams or bullet points to present the different steps that you have taken.
-*   **Data Cleaning:**
-    *   Outline what type of cleaning process you have used, such as null value handling, duplicate removal, type corrections, or string transformations.
-    *  Justify why you have performed each of these steps, and explain why they are needed.
-*   **Feature Engineering:**
-    *   Describe the types of feature engineering that you have performed, such as:
-        *   Categorical feature encoding (e.g., Label Encoding, One-Hot Encoding).
-        *   Numerical feature scaling (e.g., standardization, normalization).
-        *   Interaction term creation, and why you are choosing each of those approaches.
-     * Clearly state what new features were created and why.
-*   **Data Splitting:**
-    *   Explain how you split your data, and what was the percentage of data that you used for each part, including training, validation and test.
-    *  If you have used any specific approach for your splits, such as stratified splits or different methods to handle class imbalance, you should also document that.
-*   **Modeling:**
-    *   **Model Selection**: Explain why you selected the models you used.
-    *   **Model Training:** Explain your training procedure, and include any key detail of what you did (such as hyperparameters tunning, or early stopping).
-    *   **Evaluation**: How did you evaluate your model? What metrics are you using, and why?
+## IV. Documentation & Communication
 
-* **Feature Analysis**:
-    * If you used feature importances or any method to study what features are more important for the model, you should document that in this section.
-*   **Results Analysis:**
-    *   Summarize your key findings, including model performance, and analysis of the different plots and model results.
-    *   Try to put everything together, and use all of the knowledge you gained to create insights that are useful.
+*   [ ] **Code Documentation:**
+    *   [ ] Write clear, well-commented code throughout the project.
+    *   [ ] Use descriptive variable names.
+    *   [ ] Structure your code in a way that is easy to understand and follow.
+*   [ ] **README File:**
+    *   [ ] Include a comprehensive README.md file in your project repository, including:
+        *   [ ] Project title and purpose.
+        *   [ ] Problem statement and objectives.
+        *   [ ] Description of the data used (source, format).
+        *   [ ] Detailed methodology of the process (data preparation, modeling, evaluation).
+        *   [ ] Key findings and insights.
+        *   [ ] Evaluation results of the final model/analysis.
+        *   [ ] Instructions for how to run your code.
+        *   [ ] List of the libraries or technologies used.
+        *   [ ] Any limitations or further improvements.
+        *   [ ] Links to other relevant resources (blog posts, publications, tutorials, etc.).
+*   [ ] **Visualization:**
+    *   [ ] Include relevant visualizations to present your findings.
+    *   [ ] Ensure visualizations are clear, informative, and well-labeled.
+    *   [ ] Explain the insights conveyed by your visuals.
+*   [ ] **Jupyter Notebooks/Scripts:**
+    *   [ ] Organize your code within well-structured notebooks (or scripts), keeping the processes in logical order.
+    *   [ ] Remove any unnecessary or redundant cells from notebooks, and clear outputs before committing the changes.
 
-## 5. Results
+## V. Deployment (If applicable)
 
-*   **Model Performance:** Present the results from your models, including metrics such as accuracy, precision, recall, F1-score, and any other metrics that are useful for your project. Use tables or bullet points to summarize the results of each model.
-*   **Visualizations:** Include plots that support your findings, like distributions of the target variable, feature importances, or relationships between some important features.
-* **Documentation of limitations:** Use this section to document any limitation of the approach, or problems that you were not able to fix during your work, and why.
+*   [ ] **Model Deployment:**
+    *   [ ] If applicable, deploy the model using tools like Flask, Streamlit, or cloud platforms.
+    *   [ ] Ensure clear documentation for how the model is deployed and used.
+*   [ ] **API Development**
+    *    [ ] Create an API if you need to expose model inference or data.
+    *    [ ] Write the API documentation
 
-## 6. Comparison with Previous Work
+## VI. Project Conclusion & Reflection
 
-*   **Previous Approaches:** How did you use the work that was done by other people as a starting point for your project, or how your project was inspired by other projects.
-*   **Novel Contributions:** How does your project enhance or differ from the previous work? What unique methods or findings are presented in your project?
-
-## 7. Future Work
-
-*   Identify what you would do differently if you had more time. What other models you could try, how would you approach your feature engineering, or what other types of analysis would you do if you had more resources.
-
-## 8. Code and Environment
-
-*   **Dependencies:**
-    *   List all of the tools and frameworks used, and provide a method to install it. You can list your dependencies in this section or create a `requirements.txt` file.
-*   **Code Structure:**
-    *   Explain how your code is organized (e.g., different notebooks, folders).
-*  **Code Style** Use docstrings, comments and code formatting to ensure that your code is clean and well documented.
-
-## 9. License
-
-(Optional) Include a license if you want others to reuse your work, such as MIT or Apache.
-
-## 10. References
-
-List all your references using a citation style (like APA, MLA, etc.) that you prefer.
-
-## 11. Contact
-(Optional) Add your name and email, in case you want to be contacted for a specific reason.
-
----
-
-**Checklist for Standard Documents and Practices (Python, SQL, Git):**
-
-**I. Python**
-
-*   **Code Style:**
-    *   [ ] Adhere to PEP 8 guidelines.
-    *   [ ] Use clear, descriptive variable and function names.
-    *   [ ] Keep code lines reasonably short (e.g., under 100 characters).
-*   **Modularity:**
-    *   [ ] Break code into functions and classes.
-    *   [ ] Minimize code duplication by re-using functions and classes.
-    *   [ ] Use modules and imports to organize code.
-*   **Documentation:**
-    *   [ ] Use comments to explain your code.
-    *   [ ] Use docstrings to document the purpose, parameters, and return values of your functions and classes.
-    * [ ] Use type hints on all of your functions, as well as all the variables.
-*   **Error Handling:**
-    *   [ ] Use `try...except` blocks to catch and handle exceptions.
-    *   [ ] Use specific Exception clauses.
-*  **Data Operations:**
-    * [ ] If using Pandas, prefer vectorized operations and avoid looping.
-     * [ ] When using Pandas, fill `NaN` values before any other operation, using `fillna()`
-    *  [ ] If doing a matrix transformation always ensure that you have non-duplicate names.
-
-**II. SQL**
-
-*   **Style:**
-    *   [ ] Use uppercase for SQL keywords (e.g., `SELECT`, `FROM`, `WHERE`).
-    *   [ ] Use lowercase or snake_case for database objects (e.g., `table_name`, `column_name`).
-    *   [ ] Use indentation and line breaks to improve readability.
-*   **Comments:**
-    *   [ ] Add comments to explain the SQL code.
-    *   [ ] Document the purpose of queries, joins, or subqueries.
-*   **Security:**
-    *   [ ] Sanitize SQL queries before sending them to the database.
-    *   [ ] Handle user inputs securely.
-*   **Efficiency:**
-    *   [ ] Use indexes to optimize queries.
-    *   [ ] Use `LIMIT` clauses to prevent full table scans.
-
-**III. Git**
-
-*   **Repository:**
-    *   [ ] Create a well-structured and organized repository.
-    *   [ ] Include a `README.md` file at the root of the project.
-*   **Commits:**
-    *   [ ] Write descriptive commit messages using the imperative mood.
-    *   [ ] Commit small, logical chunks of work.
-    *   [ ] Avoid large or messy commits.
-*   **Branches:**
-    *   [ ] Use branches for different features or tasks, and then merge them to the `main` branch.
-    *   [ ] Do not work directly on your `main` branch.
-*   **Pull Requests:**
-    *   [ ] Use pull requests for code reviews (if you are working with a team).
-*   **`.gitignore`:**
-    *   [ ] Use a `.gitignore` file to avoid committing unnecessary files (e.g., data files, virtual environments, etc).
-
-**How to Use This Checklist:**
-
-1.  **Copy and Paste:** Use the `README.md` as a template and fill the details of your own project.
-2.  **Check Off Items:** As you work on each project, use this checklist and tick off the boxes as you fulfill each of the requirements.
-3.  **Iterate:** Continuously improve your coding practices and project documentation based on this checklist.
+*   [ ] **Summary of Findings:**
+    *   [ ] Summarize your key findings and conclusions.
+    *   [ ] Discuss whether you achieved your project objectives.
+*   [ ] **Limitations and Future Work:**
+    *   [ ] Identify any limitations of your project (e.g., data limitations, model assumptions).
+    *   [ ] Suggest future improvements or extensions to the project.
+*   [ ] **Personal Reflection:**
+    *   [ ] Reflect on what you learned from this project and how it might improve future projects.
+*   [ ] **Final Check:**
+    *   [ ] Double-check that all files have been committed to the git repository.
+    *   [ ] Ensure that your README is fully complete.
+    *   [ ] Confirm that the project can be replicated using the provided materials.
